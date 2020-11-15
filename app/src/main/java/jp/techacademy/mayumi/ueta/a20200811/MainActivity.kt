@@ -29,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val selectEye = intent.getStringExtra("selectEye")
+        val distance = intent.getStringExtra("Distance")
+
+        Log.d ("LogEye", "選択眼"+ selectEye )
+        Log.d ("LogEye", "距離" + distance )
+
         bitmapfirst =changeimage()
 
         rotate_button.setOnClickListener {

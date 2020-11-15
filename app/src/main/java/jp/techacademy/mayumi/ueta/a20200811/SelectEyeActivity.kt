@@ -30,18 +30,26 @@ class SelectEyeActivity : AppCompatActivity() {
 
         right_eye_button.setOnClickListener {
             selectEye="right"
+            right_eye_button.isSelected = true
+            left_eye_button.isSelected = false
         }
 
         left_eye_button.setOnClickListener {
             selectEye="left"
+            left_eye_button.isSelected = true
+            right_eye_button.isSelected = false
         }
 
         far_vision_button.setOnClickListener {
             distance="Far"
+            far_vision_button.isSelected = true
+            near_vision_button.isSelected = false
         }
 
         near_vision_button.setOnClickListener {
             distance="Near"
+            near_vision_button.isSelected = true
+            far_vision_button.isSelected = false
         }
     }
 }
